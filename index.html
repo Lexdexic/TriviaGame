@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	  crossorigin="anonymous"></script>
+	<script src="assets/javascript/app.js"></script>
+</head>
+<body>
+	<div>
+		<div>
+			<label class="timeRemaingLabel" for="timeRemainingSpan">Time remaining</label>
+			<span id="timeRemainingSpan" class="timeRemaining">60 sec</span>
+		</div>	
+		<div>
+			<ol class="questionList">
+				<li class="Q1" data-questionsIndex="0">
+					<p>quetion 1?</p>
+					<input type="radio" id="radQ1C1" name="radGrp1">
+					<label for="radQ1C1" data-choicesIndex="0">A</label>
+					<input type="radio" id="radQ1C2" name="radGrp1">
+					<label for="radQ1C2" data-choicesIndex="1">B</label>
+					<input type="radio" id="radQ1C3" name="radGrp1">
+					<label for="radQ1C3" data-choicesIndex="2">C</label>
+					<input type="radio" id="radQ1C4" name="radGrp1">
+					<label for="radQ1C4" data-choicesIndex="3">D</label>
+				</li>
+				<li class="Q2" data-questionsIndex="1">
+					<p>quetion 2?</p>
+					<input type="radio" id="radQ2C1" name="radGrp2">
+					<label for="radQ2C1" data-choicesIndex="0">A</label>
+					<input type="radio" id="radQ2C2" name="radGrp2">
+					<label for="radQ2C2" data-choicesIndex="1">B</label>
+					<input type="radio" id="radQ2C3" name="radGrp2">
+					<label for="radQ2C3" data-choicesIndex="2">C</label>
+					<input type="radio" id="radQ2C4" name="radGrp2">
+					<label for="radQ2C4" data-choicesIndex="3">D</label>
+				</li>
+				<li class="Q3" data-questionsIndex="2">
+					<p>quetion 3?</p>
+					<input type="radio" id="radQ3C1" name="radGrp3">
+					<label for="radQ3C1" data-choicesIndex="0">A</label>
+					<input type="radio" id="radQ3C2" name="radGrp3">
+					<label for="radQ3C2" data-choicesIndex="1">B</label>
+					<input type="radio" id="radQ3C3" name="radGrp3">
+					<label for="radQ3C3" data-choicesIndex="2">C</label>
+					<input type="radio" id="radQ3C4" name="radGrp3">
+					<label for="radQ3C4" data-choicesIndex="3">D</label>
+				</li>
+				
+			</ol>
+		</div>
+		<button id="submit" type="button">submit</button>
+	</div>
+	<div class="results">
+		<label class="completed-message">You did it!!</label>
+		<div>
+			<label class="result-label" for="correct">Correct Answers</label>
+			<span id="correct" class="results-span">8</span>
+		</div>
+		<div>
+			<label class="result-label" for="incorrect">Inorrect Answers</label>
+			<span id="incorrect" class="results-span">8</span>
+		</div>
+		<div>
+			<label class="result-label" for="unanswered">Unanswered Questions</label>
+			<span id="unanswered" class="results-span">8</span>
+		</div>	
+	</div>
+</body>
+</html> 
